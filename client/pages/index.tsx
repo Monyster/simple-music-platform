@@ -1,12 +1,9 @@
 import React from "react";
-import { Button } from '@mui/material';
-import PersistentDrawerLeft from "../components/PersistentDrawerLeft";
+import MainLayout from "../layouts/MainLayout";
 
 const Index = () => {
     return (
-        <>
-            <PersistentDrawerLeft />
-
+        <MainLayout>
             <div className="center">
                 <h1>Добро пожаловать</h1>
                 <h3>Здесь собраны лучшие треки!</h3>
@@ -23,8 +20,7 @@ const Index = () => {
                     }
                 `}
             </style>
-        </>
-
+        </MainLayout>
     );
 };
 
