@@ -1,4 +1,10 @@
 # simple-music-platform
-Mongo
-Nest.js
-Next.js
+
+### Back-End:
+
+- Nest.js
+- MongoDB
+
+### Front-End:
+
+- Next.js
