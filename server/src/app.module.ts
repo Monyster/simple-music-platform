@@ -4,6 +4,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { FileModule } from './file/file.module';
 import { TrackModule } from './track/track.module';
+import { AlbumModule } from './album/album.module';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { TrackModule } from './track/track.module';
     }),
     TrackModule,
     FileModule,
+    AlbumModule,
   ],
 })
 export class AppModule {}
