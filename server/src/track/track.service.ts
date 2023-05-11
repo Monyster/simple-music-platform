@@ -48,6 +48,8 @@ export class TrackService {
 
   async delete(id: Types.ObjectId): Promise<Types.ObjectId> {
     const track = await this.trackModel.findByIdAndDelete(id);
+    await this.commentModel.deleteMany({ _id: { $in: track.comments } });
+
     return track._id;
   }
 
